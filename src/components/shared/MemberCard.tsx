@@ -17,7 +17,7 @@ const MemberCard = ({ user }: UserCardProps) => {
         </p>
       </div>
       {/* <h3 className="text-lg font-bold mb-2"> {user.name}</h3> */}
-      <p>Expenses: $256</p>
+      <p>Expenses: &#8377;256</p>
     </Link>
   );
 };
