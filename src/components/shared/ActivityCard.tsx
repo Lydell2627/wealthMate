@@ -22,7 +22,7 @@ const ActivityCard = ({ activity }: UserCardProps) => {
   if (isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
     const getback = parseFloat(activity.Amout) - individualAmount;
-    amountMessage = `You get back Rupee${getback.toFixed(2)}`;
+    amountMessage = `You get back ₹{getback.toFixed(2)}`;
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amount);
     amountMessage = `You get back ₹${individualAmount.toFixed(2)}`;
