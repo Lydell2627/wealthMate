@@ -57,16 +57,16 @@ const UserCard: React.FC<UserCardProps> = ({
     if (upiLink) {
       window.location.href = upiLink;
     } else {
-      // Handle error or provide feedback to the user
+     
       console.error("Failed to generate UPI link");
     }
   };
 
   const generateUPILink = () => {
-    // Replace these values with your actual payment details
-    const payeeVPA = "nayanbarhate739-1@oksbi";
+   
+    const payeeVPA = "n34";
     const transactionAmount = "1";
-    // Construct the UPI link
+  
     const upiLink = `upi://pay?pa=${payeeVPA}&pn=%20&tr=%20&am=${transactionAmount}&cu=INR`;
     return upiLink;
   };
@@ -182,7 +182,7 @@ const UserCard: React.FC<UserCardProps> = ({
               repayment between two user
             </p>
             <Button className="btn bg-red hover:bg-red" onClick={toggleModal}>
-              Cancle
+              Cancel
             </Button>
             <Button className="btn m-2 bg-green-400" onClick={toggleModal}>
               Confirm
