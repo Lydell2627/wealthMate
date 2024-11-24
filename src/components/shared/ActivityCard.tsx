@@ -24,11 +24,13 @@ const ActivityCard = ({ activity }: UserCardProps) => {
     const getback = parseFloat(activity.Amout) - individualAmount;
     amountMessage = `You get back Rupee${getback.toFixed(2)}`;
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
-    const individualAmount = parseFloat(activity.Amout);
-    amountMessage = `You get back Rupee${individualAmount.toFixed(2)}`;
+    const individualAmount = parseFloat(activity.Amount);
+    amountMessage = `You get back ₹${individualAmount.toFixed(2)}`;
+}
+
   } else if (!isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
-    amountMessage = `You owe Rupee${individualAmount.toFixed(2)}`;
+    amountMessage = `You owe ₹${individualAmount.toFixed(2)}`;
   } else {
     amountMessage = `Not involved`;
   }
