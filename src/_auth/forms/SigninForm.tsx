@@ -51,13 +51,13 @@ const SigninForm = () => {
     }
   };
 
-  const handleDemoLogin = () => {
-    const demoCredentials = {
-      email: "Lydell@gmail.com",
-      password: "xxxx",
-    };
-    handleSignin(demoCredentials);
-  };
+  // const handleDemoLogin = () => {
+  //   const demoCredentials = {
+  //     email: "Lydell@gmail.com",
+  //     password: "xxxx",
+  //   };
+  //   handleSignin(demoCredentials);
+  // };
 
   return (
     <Form {...form}>
