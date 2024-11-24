@@ -56,12 +56,7 @@ const Profile = () => {
                 {currentUser.email}
               </span>
             </div>
-            <button className="bg-blue-500 font-semibold text-white px-4 py-2 rounded-md mr-2">
-              Edit
-            </button>
-            <button className="bg-green-500 font-semibold text-white px-4 py-2 rounded-md">
-              Contact
-            </button>
+          
           </section>
 
           <section className="mt-6">
