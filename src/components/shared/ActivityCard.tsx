@@ -26,14 +26,13 @@ const ActivityCard = ({ activity }: UserCardProps) => {
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amount);
     amountMessage = `You get back ₹${individualAmount.toFixed(2)}`;
-}
-
   } else if (!isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
     amountMessage = `You owe ₹${individualAmount.toFixed(2)}`;
   } else {
     amountMessage = `Not involved`;
   }
+
   return (
     <>
       <div
